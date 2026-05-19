@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand: #FF8C00; /* Safety Orange */
+  --color-industrial-gray: #1A1A1A;
+  --color-industrial-light: #F4F4F4;
+  --color-border-main: #E5E5E5;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-industrial-light text-industrial-gray antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight uppercase;
+  }
+}
+
+.brutal-border {
+  @apply border-2 border-border-main shadow-none;
+}
+
+.brutal-button {
+  @apply bg-brand border-2 border-industrial-gray px-6 py-2 text-white font-display font-bold uppercase tracking-tighter transition-colors hover:bg-industrial-gray hover:text-white;
+}
+
+.industrial-grid {
+  background-image: linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+    linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+  background-size: 40px 40px;
+}

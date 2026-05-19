@@ -1,0 +1,6 @@
+{
+  "name": "BUILDERS' POINT DEPO LTD",
+  "description": "Premium building materials and construction hardware supplier. Serving all your construction needs with quality BPD components.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
