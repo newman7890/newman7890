@@ -1,3 +1,8 @@
+import blocksImage from './assets/images/blocks_sandcrete_stack_1779198398636.png';
+import steelImage from './assets/images/cat_steel_1779113281438.png';
+import timberImage from './assets/images/cat_timber_1779113298709.png';
+import cementImage from './assets/images/cement_bags_pallet_1779198422043.png';
+
 export interface Category {
   id: string;
   name: string;
@@ -18,19 +23,19 @@ export const CATEGORIES: Category[] = [
   {
     id: 'cement',
     name: 'Blocks & Cement',
-    image: '/src/assets/images/blocks_sandcrete_stack_1779198398636.png',
+    image: blocksImage,
     itemCount: 42
   },
   {
     id: 'steel',
     name: 'Structural Steel',
-    image: '/src/assets/images/cat_steel_1779113281438.png',
+    image: steelImage,
     itemCount: 124
   },
   {
     id: 'timber',
     name: 'Timber & Boards',
-    image: '/src/assets/images/cat_timber_1779113298709.png',
+    image: timberImage,
     itemCount: 86
   },
   {
@@ -47,7 +52,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ghacem Super Rapid Cement (50kg)',
     price: 95,
     category: 'Cement',
-    image: '/src/assets/images/cement_bags_pallet_1779198422043.png',
+    image: cementImage,
     tag: 'Best Seller'
   },
   {
@@ -55,7 +60,7 @@ export const PRODUCTS: Product[] = [
     name: '9-Inch Sandcrete Hollow Blocks',
     price: 12,
     category: 'Cement',
-    image: '/src/assets/images/blocks_sandcrete_stack_1779198398636.png',
+    image: blocksImage,
     tag: 'Premium Quality'
   },
   {

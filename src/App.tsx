@@ -19,6 +19,9 @@ import {
 import { useState, useEffect } from 'react';
 import { CATEGORIES, PRODUCTS } from './constants';
 
+import heroBgImage from './assets/images/hero_construction_1779113263489.png';
+import blocksFeatureImage from './assets/images/blocks_sandcrete_stack_1779198398636.png';
+
 const Navbar = ({ cartCount, onAction }: { cartCount: number; onAction: (m: string) => void }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -131,7 +134,7 @@ const Hero = ({ onAction }: { onAction: (m: string) => void }) => {
     <section className="relative h-screen flex items-center overflow-hidden bg-industrial-gray pt-32 md:pt-24">
       <div className="absolute inset-0 opacity-40">
         <img 
-          src="/src/assets/images/hero_construction_1779113263489.png" 
+          src={heroBgImage} 
           alt="Construction Site" 
           className="w-full h-full object-cover"
         />
@@ -212,7 +215,7 @@ const MasonryMarket = ({ onAction }: { onAction: (m: string) => void }) => {
           <div className="relative">
             <div className="absolute -top-10 -left-10 w-32 h-32 bg-brand/20 animate-pulse" />
             <img 
-              src="/src/assets/images/blocks_sandcrete_stack_1779198398636.png" 
+              src={blocksFeatureImage} 
               alt="Premium Blocks" 
               className="relative z-10 w-full aspect-video object-cover brutal-border shadow-[20px_20px_0px_rgba(255,153,0,1)]"
             />
@@ -439,11 +442,11 @@ const Footer = ({ onAction }: { onAction: (m: string) => void }) => {
             <div className="space-y-4 text-xs font-bold uppercase tracking-widest text-white/60">
               <div className="flex items-start gap-3 text-white/40">
                 <MapPin className="text-brand shrink-0" size={18} />
-                <span>Plot 42, Industrial Sector, <br />Lagos-Ibadan Expressway.</span>
+                <span>Plot 42, Spintex Road, <br />Greater Accra Region, Ghana.</span>
               </div>
               <div className="flex items-center gap-3 text-white/40">
                 <Phone className="text-brand" size={18} />
-                <span>+234 800-BUILD-BPD</span>
+                <span>+233 30 200 4000</span>
               </div>
               <div className="mt-8 bg-white/5 p-6 border-l-4 border-brand">
                 <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-brand mb-4">SYSTEM STATUS: OPTIMAL</p>
